@@ -23,7 +23,7 @@ params:
 
   homeInfoParams:
     Title: "BitByBit 的博客"
-    Content: "![返回主站](https://bitbybit.dpdns.org/)"
+    Content: "[返回主站](https://bitbybit.dpdns.org/)"
 
 menu:
   main:
