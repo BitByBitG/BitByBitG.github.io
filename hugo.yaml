@@ -11,7 +11,7 @@ pagination:
 
 params:
   author: BitByBit
-  description: "算法、题解与随笔"
+  description: "全体群友心中的太阳——敬爱的 BitByBit 同志"
   defaultTheme: auto
   ShowReadingTime: true
   ShowCodeCopyButtons: true
@@ -23,7 +23,7 @@ params:
 
   homeInfoParams:
     Title: "BitByBit 的博客"
-    Content: "记录算法学习、题解与一些想法。"
+    Content: "![返回主站](https://bitbybit.dpdns.org/)"
 
 menu:
   main:
