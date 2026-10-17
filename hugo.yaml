@@ -1,0 +1,47 @@
+baseURL: "https://BitByBitG.github.io/"
+languageCode: zh-cn
+defaultContentLanguage: zh
+title: "BitByBit 的博客"
+theme: PaperMod
+hasCJKLanguage: true
+enableRobotsTXT: true
+
+pagination:
+  pagerSize: 10
+
+params:
+  author: BitByBit
+  description: "算法、题解与随笔"
+  defaultTheme: auto
+  ShowReadingTime: true
+  ShowCodeCopyButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowWordCount: true
+  ShowToc: true
+  TocOpen: false
+
+  homeInfoParams:
+    Title: "BitByBit 的博客"
+    Content: "记录算法学习、题解与一些想法。"
+
+menu:
+  main:
+    - name: 文章
+      url: /posts/
+      weight: 10
+    - name: 标签
+      url: /tags/
+      weight: 20
+    - name: 归档
+      url: /archives/
+      weight: 30
+    - name: 搜索
+      url: /search/
+      weight: 40
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
