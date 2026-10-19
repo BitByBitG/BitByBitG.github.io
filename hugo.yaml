@@ -7,6 +7,12 @@ hasCJKLanguage: true
 enableRobotsTXT: true
 
 markup:
+  highlight:
+    noClasses: false
+    codeFences: true
+    guessSyntax: false
+    lineNos: false
+    
   goldmark:
     extensions:
       passthrough:
@@ -33,6 +39,8 @@ params:
   ShowWordCount: true
   ShowToc: true
   TocOpen: false
+  assets:
+    disableHLJS: true
 
   homeInfoParams:
     Title: "BitByBit 的博客"

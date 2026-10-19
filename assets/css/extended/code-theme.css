@@ -1,0 +1,96 @@
+/* 接近 VS Code Light Modern */
+:root {
+  --syntax-bg: #ffffff;
+  --syntax-fg: #000000;
+  --syntax-keyword: #0000ff;
+  --syntax-control: #af00db;
+  --syntax-type: #267f99;
+  --syntax-function: #795e26;
+  --syntax-string: #a31515;
+  --syntax-number: #098658;
+  --syntax-comment: #008000;
+  --syntax-preprocessor: #af00db;
+  --syntax-variable: #001080;
+  --syntax-line: #6e7681;
+}
+
+/* 接近 VS Code Dark Modern */
+body.dark,
+html[data-theme="dark"] {
+  --syntax-bg: #1f1f1f;
+  --syntax-fg: #d4d4d4;
+  --syntax-keyword: #569cd6;
+  --syntax-control: #c586c0;
+  --syntax-type: #4ec9b0;
+  --syntax-function: #dcdcaa;
+  --syntax-string: #ce9178;
+  --syntax-number: #b5cea8;
+  --syntax-comment: #6a9955;
+  --syntax-preprocessor: #c586c0;
+  --syntax-variable: #9cdcfe;
+  --syntax-line: #858585;
+}
+
+/* 代码块底色和默认文字 */
+.post-content .highlight pre,
+.post-content pre,
+.post-content pre code,
+.post-content .chroma {
+  color: var(--syntax-fg);
+  background: var(--syntax-bg) !important;
+}
+
+.post-content pre code {
+  font-family: Consolas, "Cascadia Code", "Courier New", monospace;
+}
+
+/* 关键词 */
+.chroma :is(.k, .kd, .kn, .kp, .kr) {
+  color: var(--syntax-keyword);
+}
+
+/* 类型 */
+.chroma :is(.kt, .nc) {
+  color: var(--syntax-type);
+}
+
+/* 函数 */
+.chroma :is(.nf, .fm) {
+  color: var(--syntax-function);
+}
+
+/* 字符串与字符 */
+.chroma :is(.s, .sa, .sb, .sc, .dl, .sd, .s2,
+            .se, .sh, .si, .sx, .sr, .s1, .ss) {
+  color: var(--syntax-string);
+}
+
+/* 数字 */
+.chroma :is(.m, .mb, .mf, .mh, .mi, .il, .mo) {
+  color: var(--syntax-number);
+}
+
+/* 注释 */
+.chroma :is(.c, .ch, .cm, .c1, .cs) {
+  color: var(--syntax-comment);
+}
+
+/* 预处理指令 */
+.chroma :is(.cp, .cpf) {
+  color: var(--syntax-preprocessor);
+}
+
+/* 变量 */
+.chroma :is(.nv, .vc, .vg, .vi, .vm) {
+  color: var(--syntax-variable);
+}
+
+/* 运算符、标点 */
+.chroma :is(.o, .ow, .p) {
+  color: var(--syntax-fg);
+}
+
+/* 行号 */
+.chroma :is(.ln, .lnt) {
+  color: var(--syntax-line);
+}

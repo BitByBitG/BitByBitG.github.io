@@ -420,9 +420,9 @@ $$
 $$
 V_m(x)=
 \begin{cases}
-\dfrac{x!}{(x-m)!},&x\ge m,\\[6pt]
-0,&0\le x<m,\\[6pt]
-(-1)^m\dfrac{(m-1-x)!}{(-1-x)!},&x<0.
+\dfrac{x!}{(x-m)!}, & x\ge m, \\[6pt]
+0, & 0\le x\lt m, \\[6pt]
+(-1)^m\dfrac{(m-1-x)!}{(-1-x)!}, & x\lt 0.
 \end{cases}
 $$
 
