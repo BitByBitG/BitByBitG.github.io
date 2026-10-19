@@ -6,6 +6,19 @@ theme: PaperMod
 hasCJKLanguage: true
 enableRobotsTXT: true
 
+markup:
+  goldmark:
+    extensions:
+      passthrough:
+        enable: true
+        delimiters:
+          block:
+            - ['$$', '$$']
+            - ['\[', '\]']
+          inline:
+            - ['$', '$']
+            - ['\(', '\)']
+
 pagination:
   pagerSize: 10
 
