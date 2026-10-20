@@ -44,7 +44,9 @@ params:
 
   homeInfoParams:
     Title: "BitByBit 的博客"
-    Content: "[返回主站](https://bitbybit.dpdns.org/)"
+    Content: |
+      [返回主站](https://bitbybit.dpdns.org/)  
+  comments: true
 
 menu:
   main:
@@ -66,3 +68,12 @@ outputs:
     - HTML
     - RSS
     - JSON
+
+enableGitInfo: true
+timeZone: Asia/Shanghai
+
+frontmatter:
+  lastmod:
+    - ":git"
+    - lastmod
+    - date
