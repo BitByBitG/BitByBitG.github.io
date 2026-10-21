@@ -118,7 +118,7 @@ $$
 因此
 
 $$
-\boxed{\sum_u d_u<n.}
+\boxed{\sum_u d_u\lt n.}
 $$
 
 这是后续复杂度分析最重要的等式。
@@ -377,7 +377,7 @@ $$
 \operatorname{val}_m(B)=(B(0),B(1),\ldots,B(m-1)).
 $$
 
-由于 $m<p$，这些点在模域中互不相同，$m$ 个值可以唯一确定 $B$。
+由于 $m \lt p$，这些点在模域中互不相同，$m$ 个值可以唯一确定 $B$。
 
 定义映射 $E_{m,H,a}$：输入 $\operatorname{val}_m(B)$，输出
 
@@ -457,7 +457,7 @@ $$
 (E_{m,H,a}^{\mathsf T}w)_j
 =c_j\sum_{i=0}^{H-1}\frac{t_i}{a+i-j}
 +\begin{cases}
-w_{j-a},&0\le j-a<H,\\
+w_{j-a},&0\le j-a \lt H,\\
 0,&\text{otherwise}.
 \end{cases}
 }
@@ -533,7 +533,7 @@ $$
 因为 $X+t+s$ 是 $q_t$ 的因子，所以 $B_{t,s}$ 是多项式，并且
 
 $$
-\deg B_{t,s}<D_I.
+\deg B_{t,s} \lt D_I.
 $$
 
 于是所有查询都有相同形式：
@@ -639,10 +639,10 @@ $$
 \mathcal L_R(B)=\mathcal L_I(P_LB).
 $$
 
-注意次数仍然合法。例如 $\deg B<D_L$ 时，
+注意次数仍然合法。例如 $\deg B \lt D_L$ 时，
 
 $$
-\deg(BQ_R)<D_L+D_R=D_I.
+\deg(BQ_R) \lt D_L+D_R=D_I.
 $$
 
 用点值来实现这两次乘法，就得到
